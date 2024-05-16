@@ -29,7 +29,7 @@ public class UserController {
         return userService.getUsers();
     }
 
-    @PutMapping("/user")
+    @PutMapping("/mypage")
     public void updateUser(@RequestBody UserUpdateRequest update_request) {
         userService.updateUser(update_request);
     }
