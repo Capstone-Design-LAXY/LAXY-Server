@@ -1,6 +1,5 @@
 package com.group.laxyapp.service.user;
 
-import com.group.laxyapp.domain.user.User;
 import com.group.laxyapp.dto.user.request.UserDeleteRequest;
 import com.group.laxyapp.dto.user.request.UserRegistRequest;
 import com.group.laxyapp.dto.user.request.UserUpdateRequest;

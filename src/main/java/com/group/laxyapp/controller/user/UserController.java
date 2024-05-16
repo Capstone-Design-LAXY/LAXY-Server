@@ -5,10 +5,7 @@ import com.group.laxyapp.dto.user.request.UserDeleteRequest;
 import com.group.laxyapp.dto.user.request.UserRegistRequest;
 import com.group.laxyapp.dto.user.request.UserUpdateRequest;
 import com.group.laxyapp.dto.user.response.UserResponse;
-import com.group.laxyapp.repository.user.UserRepository;
 import com.group.laxyapp.service.user.UserService;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

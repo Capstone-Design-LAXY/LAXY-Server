@@ -3,7 +3,6 @@ package com.group.laxyapp.repository.user;
 import com.group.laxyapp.dto.user.response.UserResponse;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import com.group.laxyapp.domain.user.User;
 
 import java.util.List;
 
