@@ -1,7 +1,6 @@
 package com.group.laxyapp.controller.user;
 
 
-import com.group.laxyapp.dto.user.request.UserDeleteRequest;
 import com.group.laxyapp.dto.user.request.UserRegistRequest;
 import com.group.laxyapp.dto.user.request.UserUpdateRequest;
 import com.group.laxyapp.dto.user.response.UserResponse;
@@ -35,8 +34,13 @@ public class UserController {
     }
 
     @DeleteMapping("/user")
-    public void deleteUser(@RequestBody UserDeleteRequest delete_request) {
-        userService.deleteUser(delete_request);
+    public void deleteUser(@RequestParam ("nickname") String nickname) {
+        userService.deleteUser(nickname);
     }
+
+//    @DeleteMapping("/user")
+//    public void deleteUser(@RequestBody UserDeleteRequest delete_request) {
+//        userService.deleteUser(delete_request);
+//    }
 
 }
