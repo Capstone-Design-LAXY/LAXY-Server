@@ -45,10 +45,11 @@ public class UserService {
 
     @Transactional
     public void updateUser(UserUpdateRequest request) throws IllegalArgumentException {
+        //Optional<User> user = new User();
         User user = userRepository.findById(request.getId())
                 .orElseThrow(IllegalArgumentException::new);
 
-        user.updateUserInfo(request.getNickname(), request.getAge(), request.getGender());
+        user.updateNickname(request.getNickname());
         //userRepository.save(user);
     }
 

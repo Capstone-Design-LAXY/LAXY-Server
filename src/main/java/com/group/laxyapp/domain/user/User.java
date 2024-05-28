@@ -45,10 +45,4 @@ public class User {
     public void updateNickname(String nickname) {
         this.nickname = nickname;
     }
-
-    public void updateUserInfo(String nickname, Integer age, String gender) {
-        this.nickname = nickname;
-        this.age = age;
-        this.gender = gender;
-    }
 }
